@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="ktwo.io">
+      <title>ktwo.io</title>
+      <link rel="stylesheet" href="css/index.css">
+      <script src="js/gsap.js"></script>
+   </head>
+   <body>
+      <div id="all">
+         <audio id="audio" src="mp3/ghostin.mp3" autoplay loop></audio>
+         <div class="cursor" style="transform: translate3d(962.428px, 283.703px, 0px);"></div>
+         <div id="loader" style="transform: translate(0px, -100%); opacity: 0; display: none;">
+            <span class="color">ktwo</span>.io
+         </div>
+         <div id="header" style="display: block;">
+            <div id="particles">
+               <canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="4096" height="2366"></canvas>
+            </div>
+            <div class="social-media-links">
+               <a href="https://status.ktwo.io"><img src="images/statping.png" class="social-media" alt="statping-logo"></a>
+               <a href="https://grafana.ktwo.io"><img src="images/grafana.png" class="social-media" alt="grafana-logo"></a>
+               <a href="https://s3.ktwo.io"><img src="images/minio.png" class="social-media" alt="minio-logo"></a>
+               <a href="https://red.ktwo.io"><img src="images/red.png" class="social-media" alt="red-logo"></a>
+               <a href="https://hass.ktwo.io"><img src="images/hass.png" class="social-media" alt="hass-logo"></a>
+               <a href="https://requests.ktwo.io"><img src="images/ombi.png" class="social-media" alt="ombi-logo"></a>
+               <a href="https://sonarr.ktwo.io"><img src="images/sonarr.png" class="social-media" alt="sonarr-logo"></a>
+               <a href="https://radarr.ktwo.io"><img src="images/radarr.png" class="social-media" alt="radarr-logo"></a>
+               <a href="https://tdarr.ktwo.io"><img src="images/tdarr.png" class="social-media" alt="tdarr-logo"></a>
+               <a href="https://tautulli.ktwo.io"><img src="images/tautulli.png" class="social-media" alt="tautulli-logo"></a>
+            </div>
+            <div class="header-content">
+               <div class="header-content-box">
+                  <div class="firstline"><span class="color">ktwo</span>.io</div>
+                  <div class="secondline">
+                     I provide
+                     <span class="txt-rotate color" data-period="1200" data-rotate="[ &quot; live tv and dvr.&quot;, &quot; movies and tv shows.&quot;, &quot; home automation.&quot;, &quot; dns filtering.&quot;, &quot; s3 storage.&quot;, &quot;intrusion detection and prevention.&quot; ]"><span class="wrap"> services.</span></span>
+                     <span class="slash">|</span>
+                  </div>
+                  <div class="contact">
+                     <a href="mailto:skre@skre.me"><img src="images/mail.png" alt="email-pic" class="contactpic"></a>
+                  </div>
+               </div>
+            </div>
+            <div class="header-image">
+               <img src="images/bg.jpg" alt="logo">
+            </div>
+         </div>
+      </div>
+      <script src="js/jquery.js"></script>
+      <script src="js/particles.js"></script>
+      <script src="js/particles_002.js"></script>
+      <script src="js/index.js"></script>
+      <script>
+         particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+      </script>
+      <script>
+         var audio = document.getElementById("audio");
+         audio.volume = 0.1;
+      </script>
+      <style type="text/css">.txt-rotate > .wrap { border-right: 0em solid #666 ; }</style>
+   </body>
+</html>
